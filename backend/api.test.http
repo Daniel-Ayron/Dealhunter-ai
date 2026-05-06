@@ -1,0 +1,8 @@
+### Testando o cadastro de produto (DealHunter AI)
+POST http://localhost:3001/products
+Content-Type: application/json
+
+{
+  "url": "https://fake-ecommerce-five.vercel.app/product/69f3bbbe469e544686bc44ea",
+  "userId": "a77a7359-49b5-4ae9-b83c-5030a4d8edc9"
+}

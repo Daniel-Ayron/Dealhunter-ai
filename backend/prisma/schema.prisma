@@ -1,0 +1,39 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+
+generator client {
+  provider   = "prisma-client-js"
+  engineType = "library" 
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Product {
+  id         String @id @default(uuid())
+  title      String 
+  imageUrl   String @db.Text
+  url        String @unique @db.VarChar(738)
+  createdAt  DateTime @default(now()) 
+
+// Relação: Um produto pode ter vários registros de preço ao longo do tempo
+  priceHistory PriceHistory[]
+}
+
+model PriceHistory {
+  id         String @id @default(uuid())
+  priceBRL   Float
+  rateUsed   Float
+  capturedAt DateTime @default(now())
+
+// Ligação com a tabela de produtos
+  productId String
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+}
