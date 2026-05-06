@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import { Search, Loader2, CheckCircle2, Link2 } from "lucide-react";
 import { Input } from "./ui/input";
 import type { ProductProps } from "./ProductCard";
+import { toast } from "sonner";
 
 export function AddProduct() {
     const [url, setUrl] = useState("");
@@ -26,7 +27,7 @@ export function AddProduct() {
             setUrl("");
         } catch (error: any) {
             if (error.response?.status === 409){
-                alert("Atenção: Você já está monitorando esse produto!");
+                toast.warning("Atenção: Você já está monitorando esse produto!");
             }
             console.error("Erro na requisição", error.message);
         } finally {

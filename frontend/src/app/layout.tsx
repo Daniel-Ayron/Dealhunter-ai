@@ -4,7 +4,7 @@ import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SideMenu } from "@/components/SideMenu";
-
+import { Toaster } from "sonner";
 
 
 const roboto = Roboto({
@@ -40,6 +40,7 @@ export default function RootLayout({
             </main>
           </SidebarProvider>
         </TooltipProvider>
+        <Toaster position="top-right" richColors closeButton />
       </body>
     </html>
   );

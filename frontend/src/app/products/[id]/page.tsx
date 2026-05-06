@@ -8,6 +8,7 @@ import Link from "next/link";
 import { ArrowLeft, RefreshCw, BrainCircuit, Trash2 } from "lucide-react"; 
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 export default function ProductDetails(){
     const {id} = useParams();
@@ -46,10 +47,10 @@ export default function ProductDetails(){
         try {
             const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/products/${id}/refresh`);
             setProduct(response.data);
-            alert("Preço atualizado com sucesso!");
+            toast.success("Preço atualizado com sucesso!");
         } catch(error) {
             console.error("Erro interno ao atualizar produto!", error);
-            alert("Ocorreu um erro ao atualizar o produto.")
+            toast.error("Ocorreu um erro ao atualizar o produto.")
         } finally {
             setIsRefreshing(false);
         }
@@ -61,11 +62,11 @@ export default function ProductDetails(){
         if (confirmDelete) {
             try {
                 await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/products/${id}`);
-                alert("Produto removido com sucesso!");
+                toast.success("Produto removido com sucesso!");
                 router.push("/monitored"); 
             } catch (error) {
                 console.error("Erro ao deletar:", error);
-                alert("Erro ao deletar produto.");
+                toast.error("Erro ao deletar produto.");
             }
         }
     }
