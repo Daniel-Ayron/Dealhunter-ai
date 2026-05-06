@@ -21,7 +21,7 @@ export function ProductCard({id, title, imageUrl, currentPrice, url}: ProductPro
         <div >
         <Card>
             <Link href={`/products/${id}`} className="cursor-pointer">
-            <CardHeader className="relative w-full h-64 bg-white overflow-hidden rounded-t-xl border-b">
+            <CardHeader className="relative w-full h-64 bg-white overflow-hidden rounded-t-xl border-b ">
                 <Image 
                     src={imageUrl} 
                     alt={title}
@@ -30,7 +30,7 @@ export function ProductCard({id, title, imageUrl, currentPrice, url}: ProductPro
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             </CardHeader>
-            <CardContent>
+            <CardContent >
                 <CardTitle>{title}</CardTitle>
                 <p className="text-2xl font-bold mt-2">
                   {currentPrice?.toLocaleString('pt-BR', {

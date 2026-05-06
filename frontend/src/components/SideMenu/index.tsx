@@ -16,9 +16,9 @@ import {
 
 export function SideMenu() {
   return (
-    <Sidebar className="bg-zinc-950 text-zinc-600 border-r border-zinc-800">
-      <SidebarHeader className="p-4 border-b border-zinc-800">
-        <span className="font-bold text-lg">DEALHUNTER AI</span>
+    <Sidebar className="border border-black">
+      <SidebarHeader className="border-b text-center border-black">
+        <span className="font-bold text-1xl">DEALHUNTER AI</span>
         
       </SidebarHeader>
       
@@ -26,16 +26,16 @@ export function SideMenu() {
         <SidebarGroup>
           <SidebarMenu>
             <SidebarMenuItem>
-              <SidebarMenuButton asChild>
+              <SidebarMenuButton asChild className="[&_svg]:size-5">
                 <Link href="/">
-                  <Home size={20} />
+                  <Home />
                   <span className="text-lg ">Home</span>
                 </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
 
             <SidebarMenuItem>
-              <SidebarMenuButton asChild>
+              <SidebarMenuButton asChild className="[&_svg]:size-5">
                 <Link href="/monitored">
                   <PackageSearch size={18} />
                   <span className="text-lg">Meus Produtos</span>
@@ -47,10 +47,10 @@ export function SideMenu() {
         </SidebarGroup>
       </SidebarContent>
       
-      <SidebarFooter className="p-4 border-t">
+      <SidebarFooter className="p-4 border-t border-black">
         <div className="flex items-center gap-3">
           <User size={18} />
-          <span className="text-sm font-medium">Daniel Ayron</span>
+          <span className="text-sm font-medium">Usuario</span>
         </div>
       </SidebarFooter>
     </Sidebar>

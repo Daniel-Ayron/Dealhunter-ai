@@ -5,6 +5,7 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SideMenu } from "@/components/SideMenu";
 import { Toaster } from "sonner";
+import Image from "next/image";
 
 
 const roboto = Roboto({
@@ -32,7 +33,17 @@ export default function RootLayout({
             <SideMenu />
             <main className="w-full">
               <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
-                <SidebarTrigger />
+                 <SidebarTrigger />
+                <div className="ml-auto flex items-center gap-2">
+                  <Image
+                    src="/logoDeal.png"
+                    alt="Dealhunter logo"
+                    width={50}
+                    height={20}
+                    priority
+                  />
+                </div>
+               
               </header>
               <div className="p-4">
                 {children}

@@ -52,7 +52,7 @@ export function AddProduct() {
                 <Button 
                     onClick={handleAddProduct} 
                     disabled={isLoading || !url}
-                    className="px-8 py-6 rounded-xl font-bold bg-zinc-900 hover:bg-zinc-800 transition-all active:scale-95"
+                    className="px-8 py-6 rounded-xl font-bold bg-amber-600 hover:bg-amber-800 transition-all active:scale-95"
                 >
                     {isLoading ? (
                         <Loader2 className="mr-2 h-5 w-5 animate-spin" />
