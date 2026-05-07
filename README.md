@@ -45,3 +45,17 @@ O projeto está estruturado como um monorepo. Siga os passos abaixo para configu
 4. Inicie a aplicação:
    ```bash
    npm run dev
+   ````
+---
+
+## 🕹️ Guia de Uso (Como Testar)
+
+Para testar as funcionalidades de rastreio e captura de dados do **DealHunter AI**, siga estes passos:
+
+1. Acesse o site de testes: [Fake eCommerce](https://fake-ecommerce-five.vercel.app/)
+2. Clique em qualquer produto da vitrine para abrir os detalhes.
+3. Copie a **URL completa** gerada na barra de endereços do seu navegador.
+4. No painel principal do **DealHunter AI**, cole a URL no campo de entrada e clique no botão **Monitorar**.
+5. O sistema irá processar o link, extrair as informações e começar a gerar o seu histórico de preços!
+
+---
