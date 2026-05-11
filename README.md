@@ -59,6 +59,13 @@ Para testar as funcionalidades de rastreio e captura de dados do **DealHunter AI
 5. O sistema irá processar o link, extrair as informações e começar a gerar o seu histórico de preços!
 
 ---
+
+## 📝 Demonstração
+
+![Demonstração do Projeto](./frontend/public/Demonstration.gif)
+
+---
+
 ## 📝 Resumo do Desenvolvedor
 
 ### 🏛️ Desafios no Backend:
