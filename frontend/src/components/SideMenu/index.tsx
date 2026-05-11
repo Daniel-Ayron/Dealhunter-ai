@@ -16,7 +16,7 @@ import {
 
 export function SideMenu() {
   return (
-    <Sidebar className="border border-black">
+    <Sidebar className="border border-black rounded-2xl overflow-hidden">
       <SidebarHeader className="border-b text-center border-black">
         <span className="font-bold text-1xl">DEALHUNTER AI</span>
         
