@@ -66,13 +66,6 @@ Para testar as funcionalidades de rastreio e captura de dados do **DealHunter AI
 
 ---
 
-## 📝 Resumo do Desenvolvedor
-
-### 🏛️ Desafios no Backend:
-No desenvolvimento do backend, o maior desafio técnico residiu na gestão do **Prisma ORM**. Devido às mudanças significativas entre as versões da ferramenta, enfrentei conflitos de configuração e instalação que exigiram uma análise profunda da documentação oficial para garantir a estabilidade do sistema. Além disso, a natureza volátil do web scraping exigiu refatorações constantes sempre que a estrutura do e-commerce alvo era alterada, quebrando a captura dos dados. 
-
-### 🎨 Desafios no Frontend:
-Aqui o desafio principal foi a transição do React tradicional para o **Next.js 15** , que apesar das peculiaridades, trouxe uma curva de aprendizado interessante, especialmente na compreensão de como o Next lida com rotas e renderização do lado do servidor (SSR). Na parte estética, o desafio foi dominar o sistema de múltiplas classes do **Tailwind CSS**, que embora ofereça agilidade, exige uma organização rigorosa para manter a manutenibilidade do código.
 
 ### 💡 Estratégias e Aprendizado
 Para superar esses obstáculos, adotei uma postura de **estudo autodidata**, utilizando majoritariamente documentações técnicas oficiais, fóruns da comunidade e tutoriais avançados em plataformas como o YouTube. A estratégia de desenvolvimento foi baseada em **testes constantes com logs**, especialmente no backend, para rastrear o fluxo de dados em tempo real. Além disso, utilizei o **Gemini** como um guia de codificação, o qual me auxiliou na organização de tarefas complexas e nas pesquisas em relação ao projeto.
