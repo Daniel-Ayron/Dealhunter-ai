@@ -66,6 +66,3 @@ Para testar as funcionalidades de rastreio e captura de dados do **DealHunter AI
 
 ---
 
-
-
-Para superar esses obstáculos, adotei uma postura de **estudo autodidata**, utilizando majoritariamente documentações técnicas oficiais, fóruns da comunidade e tutoriais avançados em plataformas como o YouTube. A estratégia de desenvolvimento foi baseada em **testes constantes com logs**, especialmente no backend, para rastrear o fluxo de dados em tempo real. Além disso, utilizei o **Gemini** como um guia de codificação, o qual me auxiliou na organização de tarefas complexas e nas pesquisas em relação ao projeto.
